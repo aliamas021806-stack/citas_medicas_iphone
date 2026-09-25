@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  item_specialty.xml  (FIX: chip de especialidad seleccionable)
+  =================================================================
+  Cambios frente al original:
+   * android:focusable="false" (antes true) para no robar el primer toque.
+   * android:foreground con ripple.
+   * android:descendantFocusability="blocksDescendants".
+   * Los TextView hijos usan android:duplicateParentState para reflejar el
+     estado selected del chip (icono y texto se vuelven blancos al activarse).
+   * android:minHeight="44dp" para un área táctil cómoda.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/specialtyRoot"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/spacing_sm"
+    android:background="@drawable/bg_chip"
+    android:clickable="true"
+    android:focusable="false"
+    android:foreground="?attr/selectableItemBackground"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical"
+    android:minHeight="44dp"
+    android:orientation="horizontal"
+    android:paddingHorizontal="@dimen/spacing_md"
+    android:paddingVertical="@dimen/spacing_sm">
+
+    <TextView
+        android:id="@+id/tvIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:duplicateParentState="true"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvSpecialtyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_sm"
+        android:duplicateParentState="true"
+        android:textColor="@color/text_primary"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+</LinearLayout>

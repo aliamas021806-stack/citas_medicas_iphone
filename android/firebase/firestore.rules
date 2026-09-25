@@ -1,0 +1,44 @@
+rules_version = '2';
+// =====================================================================
+//  firestore.rules  -  Sistema de Citas Medicas
+// ---------------------------------------------------------------------
+//  MODO DEMO / PRUEBAS EN PC (ACTIVO POR DEFECTO)
+//  Permite lectura/escritura para poder probar la app en el emulador SIN
+//  configurar autenticacion Firebase (la app usa login simulado).
+//
+//  >>> PARA PRODUCCION: elimina el bloque DEMO y descomenta el bloque
+//      PRODUCCION de mas abajo (requiere Firebase Auth real).
+// =====================================================================
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ------------------------- BLOQUE DEMO ---------------------------
+    match /{document=**} {
+      allow read, write: if true;
+    }
+    // ----------------------------------------------------------------
+
+    // ---------------------- BLOQUE PRODUCCION -----------------------
+    // Descomenta y BORRA el bloque DEMO para un despliegue real:
+    //
+    // // Catalogo medico: lectura publica, escritura solo Admin SDK.
+    // match /specialties/{id} { allow read: if true; allow write: if false; }
+    // match /doctors/{id}     { allow read: if true; allow write: if false; }
+    // match /slots/{id}       { allow read: if true; allow write: if false; }
+    // match /metadata/{id}    { allow read: if false; allow write: if false; }
+    //
+    // // Usuarios: cada uno accede solo a su perfil.
+    // match /users/{uid} {
+    //   allow read, write: if request.auth != null && request.auth.uid == uid;
+    // }
+    //
+    // // Citas: cada usuario gestiona solo las suyas.
+    // match /appointments/{id} {
+    //   allow read:   if request.auth != null && resource.data.userId == request.auth.uid;
+    //   allow create: if request.auth != null && request.data.userId == request.auth.uid;
+    //   allow update: if request.auth != null && resource.data.userId == request.auth.uid;
+    //   allow delete: if false;
+    // }
+    // ----------------------------------------------------------------
+  }
+}

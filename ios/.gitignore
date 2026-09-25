@@ -1,0 +1,25 @@
+# Xcode
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# CocoaPods (no usado, prevención)
+Pods/
+
+# macOS
+.DS_Store
+
+# XcodeGen output (regenerable)
+# CitasMedicas.xcodeproj/

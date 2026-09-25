@@ -1,0 +1,37 @@
+# ---- Secretos (NUNCA subir) ----
+*.firebase-adminsdk*.json
+firebase-admin-sdk.json
+serviceAccountKey.json
+.firebase_keys/
+.env
+.env.*
+
+# ---- Android / Gradle ----
+build/
+app/build/
+.gradle/
+.idea/
+local.properties
+*.iml
+captures/
+.externalNativeBuild/
+.cxx/
+
+# ---- iOS / Xcode ----
+DerivedData/
+build/
+*.xcuserstate
+xcuserdata/
+*.xccheckout
+*.xcscmblueprint
+.DS_Store
+Pods/
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+
+# ---- Otros ----
+*.log
+*.apk
+*.aab

@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Citas Médicas</string>
+
+    <!-- Auth -->
+    <string name="login_title">Bienvenido</string>
+    <string name="login_subtitle">Inicia sesión para agendar tus citas médicas</string>
+    <string name="login_email_hint">Correo electrónico</string>
+    <string name="login_password_hint">Contraseña</string>
+    <string name="login_name_hint">Nombre completo</string>
+    <string name="login_age_hint">Edad</string>
+    <string name="login_button">Iniciar sesión</string>
+    <string name="register_button">Crear cuenta</string>
+    <string name="toggle_register">¿No tienes cuenta? Regístrate</string>
+    <string name="toggle_login">¿Ya tienes cuenta? Inicia sesión</string>
+    <string name="logout">Cerrar sesión</string>
+
+    <!-- Dashboard / navegación -->
+    <string name="tab_doctors">Doctores</string>
+    <string name="tab_appointments">Mis Citas</string>
+    <string name="tab_profile">Perfil</string>
+    <string name="specialty_title">Especialidades Médicas</string>
+    <string name="doctors_title">Doctores destacados</string>
+    <string name="search_hint">Buscar doctor o especialidad…</string>
+
+    <!-- Detalle doctor -->
+    <string name="book_appointment">Agendar cita</string>
+    <string name="select_date">Selecciona una fecha</string>
+    <string name="select_time">Selecciona un horario</string>
+    <string name="available_slots">Horarios disponibles</string>
+    <string name="confirm_appointment">Confirmar cita</string>
+    <string name="no_slots_available">No hay horarios disponibles para esta fecha. Prueba con otro día.</string>
+    <string name="select_slot_hint">Selecciona un horario disponible para continuar</string>
+
+    <!-- Citas -->
+    <string name="my_appointments">Mis Citas Médicas</string>
+    <string name="no_appointments">No tienes citas agendadas todavía</string>
+    <string name="appointment_confirmed">¡Cita agendada correctamente!</string>
+    <string name="appointment_cancelled">Cita cancelada</string>
+    <string name="cancel_appointment">Cancelar cita</string>
+    <string name="cancel_dialog_title">Cancelar cita</string>
+    <string name="cancel_dialog_message">¿Estás seguro de que deseas cancelar esta cita?</string>
+    <string name="confirm">Confirmar</string>
+    <string name="dismiss">Cerrar</string>
+    <string name="retry">Reintentar</string>
+    <string name="loading_error">Ocurrió un error al cargar los datos</string>
+
+    <!-- Estados de cita -->
+    <string name="status_confirmed">Confirmada</string>
+    <string name="status_cancelled">Cancelada</string>
+    <string name="status_pending">Pendiente</string>
+
+    <!-- Perfil -->
+    <string name="profile_title">Mi Perfil</string>
+    <string name="profile_upcoming">Citas próximas</string>
+    <string name="profile_total">Citas totales</string>
+</resources>

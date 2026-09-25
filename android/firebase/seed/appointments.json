@@ -1,0 +1,41 @@
+[
+  {
+    "userId": "user_01",
+    "doctorId": "doc_01",
+    "doctorName": "Carlos Ramírez",
+    "specialtyName": "Cardiología",
+    "patientName": "Laura Jiménez",
+    "patientAge": 34,
+    "date": "2026-09-26",
+    "time": "10:00",
+    "status": "Confirmed",
+    "reason": "Chequeo cardiológico anual",
+    "createdAt": 1700000000000
+  },
+  {
+    "userId": "user_01",
+    "doctorId": "doc_02",
+    "doctorName": "María González",
+    "specialtyName": "Pediatría",
+    "patientName": "Laura Jiménez",
+    "patientAge": 34,
+    "date": "2026-09-29",
+    "time": "16:00",
+    "status": "Confirmed",
+    "reason": "Control de crecimiento",
+    "createdAt": 1700000000001
+  },
+  {
+    "userId": "user_01",
+    "doctorId": "doc_03",
+    "doctorName": "Andrea López",
+    "specialtyName": "Dermatología",
+    "patientName": "Laura Jiménez",
+    "patientAge": 34,
+    "date": "2026-09-25",
+    "time": "09:00",
+    "status": "Cancelled",
+    "reason": "Revisión de lunar",
+    "createdAt": 1700000000002
+  }
+]

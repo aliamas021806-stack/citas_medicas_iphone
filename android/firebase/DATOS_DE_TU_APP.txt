@@ -1,0 +1,38 @@
+========================================================================
+ DATOS DE IDENTIFICACION DE TU APP  (para Firebase Console)
+ Proyecto Firebase: citas-medicas-d6b59
+========================================================================
+
+>>> 1) PARA ANDROID  (esto es lo que TU usas)
+------------------------------------------------------------------------
+Nombre del paquete Android (package name):
+    com.tuempresa.citasmedicas
+
+Apodo (nickname):
+    Citas Medicas Android
+
+SHA-1 (OPCIONAL - NO lo necesitas para Firestore/Auth email-contrasena;
+       solo se pide para "Iniciar sesion con Google" o "Telefono"):
+    Release (este proyecto): 61:01:82:C2:7D:3B:D1:09:56:69:7E:ED:3B:44:A1:39:5F:53:38:C2
+
+>>> 2) PARA iOS  (NO lo necesitas: no tienes Mac/iPhone)
+------------------------------------------------------------------------
+ID del paquete de Apple (bundle ID):
+    com.tuempresa.citasmedicas
+
+Alias de la app:
+    Citas Medicas iOS
+
+ID de App Store:
+    (dejar VACIO)
+
+>>> 3) PARA WEB (opcional, si mas adelante haces la version web)
+------------------------------------------------------------------------
+Apodo: Citas Medicas Web
+
+========================================================================
+ RECUERDA: para crear la BASE DE DATOS no hace falta registrar ninguna app.
+ Ve directo a:
+   https://console.firebase.google.com/project/citas-medicas-d6b59/firestore
+ y pulsa "Crear base de datos".
+========================================================================

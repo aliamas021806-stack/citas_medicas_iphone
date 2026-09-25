@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.CitasMedicas" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="android:statusBarColor">@color/primary</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+    </style>
+
+    <style name="Widget.CitasMedicas.Button" parent="Widget.Material3.Button">
+        <item name="android:layout_height">52dp</item>
+        <item name="cornerRadius">14dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Widget.CitasMedicas.Card" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">@dimen/card_radius</item>
+        <item name="cardElevation">2dp</item>
+        <item name="android:layout_marginBottom">@dimen/spacing_sm</item>
+    </style>
+
+    <style name="TextAppearance.CitasMedicas.Title" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.CitasMedicas.Subtitle" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+</resources>

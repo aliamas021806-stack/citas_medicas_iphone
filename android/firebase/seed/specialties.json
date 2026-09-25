@@ -1,0 +1,58 @@
+[
+  {
+    "id": "esp_01",
+    "name": "Cardiología",
+    "iconEmoji": "🫀",
+    "description": "Diagnóstico y tratamiento de enfermedades del corazón",
+    "doctorCount": 3
+  },
+  {
+    "id": "esp_02",
+    "name": "Pediatría",
+    "iconEmoji": "👶",
+    "description": "Atención médica integral para niños y adolescentes",
+    "doctorCount": 2
+  },
+  {
+    "id": "esp_03",
+    "name": "Dermatología",
+    "iconEmoji": "🧴",
+    "description": "Cuidado de la piel, cabello y uñas",
+    "doctorCount": 2
+  },
+  {
+    "id": "esp_04",
+    "name": "Traumatología",
+    "iconEmoji": "🦴",
+    "description": "Lesiones del sistema músculo-esquelético",
+    "doctorCount": 2
+  },
+  {
+    "id": "esp_05",
+    "name": "Neurología",
+    "iconEmoji": "🧠",
+    "description": "Trastornos del sistema nervioso central y periférico",
+    "doctorCount": 2
+  },
+  {
+    "id": "esp_06",
+    "name": "Medicina General",
+    "iconEmoji": "🩺",
+    "description": "Atención primaria y consulta general",
+    "doctorCount": 3
+  },
+  {
+    "id": "esp_07",
+    "name": "Ginecología",
+    "iconEmoji": "🌸",
+    "description": "Salud reproductiva y femenina",
+    "doctorCount": 2
+  },
+  {
+    "id": "esp_08",
+    "name": "Oftalmología",
+    "iconEmoji": "👁",
+    "description": "Cuidado de la visión y enfermedades oculares",
+    "doctorCount": 2
+  }
+]

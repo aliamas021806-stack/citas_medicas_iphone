@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  item_date.xml  (FIX Error 2: selección de fecha)
+  =================================================================
+  Cambios frente al original:
+   * android:focusable="true"  -> android:focusable="false"
+     Un hijo focusable dentro de un RecyclerView + ScrollView en modo táctil
+     consume el primer toque (focus touch mode), de modo que setOnClickListener
+     del propio ítem no se disparaba al primer toque.
+   * android:foreground="?attr/selectableItemBackground" para dar feedback.
+   * android:descendantFocusability="blocksDescendants" para que el root (que
+     tiene el listener) reciba siempre el clic.
+   * Los TextView hijos usan android:duplicateParentState="true" para que sus
+     colores cambien al marcar el contenedor como selected (antes no cambiaban
+     y parecía que la selección "no funcionaba").
+   * android:minWidth/minHeight para cumplir la guía táctil de 48dp.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dateRoot"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/spacing_sm"
+    android:background="@drawable/bg_day"
+    android:clickable="true"
+    android:focusable="false"
+    android:foreground="?attr/selectableItemBackground"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center"
+    android:minWidth="56dp"
+    android:minHeight="56dp"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/spacing_md"
+    android:paddingVertical="@dimen/spacing_sm">
+
+    <TextView
+        android:id="@+id/tvDayName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:duplicateParentState="true"
+        android:textColor="@color/text_secondary"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tvDayNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:duplicateParentState="true"
+        android:textColor="@color/text_primary"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</LinearLayout>

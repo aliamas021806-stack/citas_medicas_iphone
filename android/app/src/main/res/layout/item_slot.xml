@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  item_slot.xml  (FIX Error 2: no se podían seleccionar los horarios)
+  =================================================================
+  Cambios:
+   * Se elimina android:focusable="true".
+   * android:foreground para feedback táctil.
+   * Las etiquetas hijas usan android:duplicateParentState="true" para que sus
+     colores cambien cuando el contenedor se marca como selected/disabled
+     (en el diseño original los textos no propagaban el estado).
+   * Se reserva minHeight de 48dp (guía de accesibilidad de toque).
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/slotRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/spacing_sm"
+    android:background="@drawable/bg_slot"
+    android:clickable="true"
+    android:focusable="false"
+    android:foreground="?attr/selectableItemBackground"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical"
+    android:minHeight="52dp"
+    android:orientation="horizontal"
+    android:paddingHorizontal="@dimen/spacing_md"
+    android:paddingVertical="@dimen/spacing_sm">
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:duplicateParentState="true"
+        android:textColor="@color/text_primary"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvAvailability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:duplicateParentState="true"
+        android:textColor="@color/status_confirmed"
+        android:textSize="12sp" />
+</LinearLayout>

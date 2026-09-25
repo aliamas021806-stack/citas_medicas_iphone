@@ -1,0 +1,32 @@
+"auth.login" = "Sign in";
+"auth.register" = "Create account";
+"auth.email" = "Email address";
+"auth.password" = "Password";
+"auth.fullname" = "Full name";
+"auth.age" = "Age";
+"auth.enter" = "Sign in";
+"auth.signup" = "Sign up";
+"auth.tagline" = "Your health, one tap away";
+"auth.noAccount" = "Don't have an account?";
+"auth.haveAccount" = "Already have an account?";
+
+"tab.home" = "Home";
+"tab.appointments" = "Appointments";
+"tab.profile" = "Profile";
+
+"appt.new" = "New Appointment";
+"appt.mine" = "My Appointments";
+"appt.confirm" = "Confirm & Book";
+"appt.cancel" = "Cancel appointment";
+"appt.reason" = "Reason for visit";
+"appt.date" = "Date";
+"appt.time" = "Time";
+"appt.detail" = "Appointment Detail";
+"appt.status.confirmed" = "Confirmed";
+"appt.status.pending" = "Pending";
+"appt.status.cancelled" = "Cancelled";
+
+"state.loading" = "Loading...";
+"state.retry" = "Retry";
+"state.empty.title" = "No results";
+"state.empty.message" = "Book a new appointment to see it here.";

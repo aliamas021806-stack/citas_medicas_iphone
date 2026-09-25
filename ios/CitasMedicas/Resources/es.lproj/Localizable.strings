@@ -1,0 +1,36 @@
+/* Autenticación */
+"auth.login" = "Iniciar sesión";
+"auth.register" = "Crear cuenta";
+"auth.email" = "Correo electrónico";
+"auth.password" = "Contraseña";
+"auth.fullname" = "Nombre completo";
+"auth.age" = "Edad";
+"auth.enter" = "Entrar";
+"auth.signup" = "Registrarme";
+"auth.tagline" = "Tu salud, a un toque de distancia";
+"auth.noAccount" = "¿No tienes cuenta?";
+"auth.haveAccount" = "¿Ya tienes cuenta?";
+
+/* Navegación */
+"tab.home" = "Inicio";
+"tab.appointments" = "Mis Citas";
+"tab.profile" = "Perfil";
+
+/* Citas */
+"appt.new" = "Nueva Cita";
+"appt.mine" = "Mis Citas";
+"appt.confirm" = "Confirmar y Reservar";
+"appt.cancel" = "Cancelar cita";
+"appt.reason" = "Motivo de consulta";
+"appt.date" = "Fecha";
+"appt.time" = "Horario";
+"appt.detail" = "Detalle de Cita";
+"appt.status.confirmed" = "Confirmada";
+"appt.status.pending" = "Pendiente";
+"appt.status.cancelled" = "Cancelada";
+
+/* Estados */
+"state.loading" = "Cargando...";
+"state.retry" = "Reintentar";
+"state.empty.title" = "Sin resultados";
+"state.empty.message" = "Agenda una nueva cita médica para verla aquí.";

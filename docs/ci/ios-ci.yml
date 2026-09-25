@@ -1,0 +1,42 @@
+name: iOS Build (verificación)
+
+# Verifica que el proyecto iOS COMPILA en un runner macOS de GitHub.
+# Útil para quien no tiene Mac: sube el repo a GitHub y mira "Actions" (check verde).
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Seleccionar Xcode
+        run: sudo xcode-select -switch /Applications/Xcode.app
+
+      - name: Instalar XcodeGen
+        run: brew install xcodegen
+
+      - name: Generar proyecto Xcode
+        run: xcodegen generate
+
+      - name: Compilar para simulador (sin firma)
+        run: |
+          xcodebuild \
+            -project CitasMedicas.xcodeproj \
+            -scheme CitasMedicas \
+            -sdk iphonesimulator \
+            -configuration Debug \
+            -destination 'generic/platform=iOS Simulator' \
+            CODE_SIGNING_ALLOWED=NO \
+            build | xcpretty || xcodebuild \
+            -project CitasMedicas.xcodeproj \
+            -scheme CitasMedicas \
+            -sdk iphonesimulator \
+            -configuration Debug \
+            -destination 'generic/platform=iOS Simulator' \
+            CODE_SIGNING_ALLOWED=NO \
+            build
