@@ -83,19 +83,5 @@ Abre `web-demo/index.html` en el navegador (o sírvelo con
 - **Guiar el aprovisionamiento**: ver [`docs/FIREBASE_SETUP.md`](docs/FIREBASE_SETUP.md).
 - **Scripts de siembra** (Admin SDK, idempotentes):
   ```bash
-  pip install firebase-admin==7.1.0
-  cd docs/firebase/scripts
-  python3 setup_firebase.py /ruta/a/tu-firebase-admin-sdk.json
-  ```
 
-> ⚠️ **Nunca** subas al repositorio la clave **Admin SDK** (`firebase-admin-sdk.json`).
-> Es un secreto que da acceso total a Firestore. Ya está en `.gitignore`.
 
----
-
-## 🔐 Notas de seguridad
-
-- `android/citasmedicas-release.jks` + `key.properties` son una **keystore DEMO**
-  incluida a propósito para que CI pueda firmar un APK instalable. **En un proyecto
-  real NO la subas**: usa GitHub Secrets.
-- `app/google-services.json` es **público** (identifica la app, no concede acceso).
